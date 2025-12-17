@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>E-commerce</title>
+</head>
 <body>
-<h2>Simple E-commerce</h2>
-<button onclick="add()">Add Mobile</button>
+<h2>Products</h2>
+<button onclick="addCart()">Add Mobile</button>
 
 <script>
-function add(){
+function addCart(){
  fetch("http://localhost:3000/cart",{
   method:"POST",
   headers:{"Content-Type":"application/json"},
@@ -16,3 +19,4 @@ function add(){
 </script>
 </body>
 </html>
+
