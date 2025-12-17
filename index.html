@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Simple E-commerce</h2>
+<button onclick="add()">Add Mobile</button>
+
+<script>
+function add(){
+ fetch("http://localhost:3000/cart",{
+  method:"POST",
+  headers:{"Content-Type":"application/json"},
+  body:JSON.stringify({product:"Mobile"})
+ });
+ alert("Added to cart");
+}
+</script>
+</body>
+</html>
